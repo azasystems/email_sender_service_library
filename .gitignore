@@ -7,3 +7,4 @@ logs/log.log
 composer.lock
 /tools/php-cs-fixer/composer.json
 /.phpdoc/build/
+/.phpdoc/cache/
