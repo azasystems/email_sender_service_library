@@ -1,0 +1,23 @@
+{
+    "name": "azasystems/email_sender_service_library",
+    "version": "1.1.1",
+    "require": {
+        "php": ">=8.2.2",
+        "ext-pdo": "*",
+        "react/async": "^4.0",
+        "vlucas/phpdotenv": "^5.5",
+        "robmorgan/phinx": "^0.13.4",
+        "ext-dom": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "AzaSystems": ""
+        }
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.0",
+        "codeception/module-phpbrowser": "*",
+        "codeception/module-asserts": "^3.0",
+        "vimeo/psalm": "^5.6"
+    }
+}

@@ -1,0 +1,9 @@
+.env
+.idea
+.php-cs-fixer.cache
+.DS_Store
+vendor
+logs/log.log
+composer.lock
+/tools/php-cs-fixer/composer.json
+/.phpdoc/build/

@@ -1,0 +1,12 @@
+# Смотри ./docs/system_design.md
+# A crontab file has five fields for specifying day , date and time followed by the command to be run at that interval:
+# https://stackoverflow.com/questions/9393449/cron-command-to-run-every-12-hours
+
+# Сервис validator - Скрипт валидации email истекающих подписок - запуск 1 раз в 12 часов
+* */12 * * *   cd /var/www/html && php  >> logs/validator.log
+
+# Сервис sender - Скрипт отправки email - запуск 1 раз в 12 часов
+* */12 * * *   cd /var/www/html && php  >> logs/sender.log
+
+# Сервис deadletter - Скрипт обработки dead letter
+* */12 * * *   cd /var/www/html && php  >> logs/deadletter.log
